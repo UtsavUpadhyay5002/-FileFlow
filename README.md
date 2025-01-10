@@ -23,19 +23,19 @@ To run the project:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/Downloads-Organizer.git
+    git clone https://github.com/UtsavUpadhyay/FileFlow.git
     ```
 
 2. Navigate to the project folder:
     ```bash
-    cd Downloads-Organizer
+    cd FileFlow.git
     ```
 
 3. Make sure you have Python installed (Python 3 recommended).
 
 4. Run the Python script:
     ```bash
-    python download_organizer.py
+    py main.py
     ```
 
     The script will continuously monitor your **Downloads** folder and organize files as they are added.
