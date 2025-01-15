@@ -1,6 +1,6 @@
 # 📂 Downloads Organizer 🚀
 
-This Python project is designed to automatically organize files in your Downloads folder. The script moves files into appropriate subfolders based on their extensions. It checks for new files every 10 seconds and organizes them into folders like "Pictures", "Videos", "Documents", and more.
+This Python project automatically organizes files in your Downloads folder. It moves files into appropriate subfolders based on their extensions. It checks for new files every 5 seconds and organizes them into folders like "Pictures", "Videos", "Documents", and more.
 
 ## ✨ Features
 
@@ -8,18 +8,17 @@ This Python project is designed to automatically organize files in your Download
 - 🎥 Moves video files (`.mp4`, `.mkv`, `.mp3`) to the **Videos** folder.
 - 📄 Sorts text documents (`.txt`, `.pdf`, `.docx`, `.pptx`, `.csv`) into a "Downloaded_docs" folder with subfolders based on file type.
 - 🖥️ Moves `.exe` files to an **executables** folder.
-- 📦 Sorts `.zip` and `.drawio` files into their respective folders.
+- 📦 Sorts `.zip` and `.drawio` files into their respective foldedrs.
 - 💻 Organizes programming files (`.py`, `.java`, `.cpp`) into a "Downloaded_codes" folder.
 
 ## 📋 How It Works
 
 1. The script monitors your **Downloads** folder for new files.
 2. When a new file is detected, it is moved to an appropriate folder based on its file extension.
-3. The script runs indefinitely, checking every 10 seconds for new files to organize.
+3. The script runs indefinitely, checking every 5 seconds for new files to organize.
+4. Logs of files moved are stored in **"logs.txt"**
 
 ## 🛠️ Setup Instructions
-
-To run the project:
 
 1. Clone the repository:
     ```bash
@@ -33,12 +32,15 @@ To run the project:
 
 3. Make sure you have Python installed (Python 3 recommended).
 
-4. Run the Python script:
+4.Create a logs.txt file in the project folder
+    ```bash
+    echo. > logs.txt
+    ```
+
+5. Run the Python script:
     ```bash
     py main.py
     ```
-
-    The script will continuously monitor your **Downloads** folder and organize files as they are added.
 
 ## 📦 Requirements
 
@@ -49,7 +51,6 @@ To run the project:
 
 This is just the beginning! Future updates may include:
 - 🔍 More advanced file sorting (e.g., by file size, creation date).
-- 📑 Adding logging functionality to track file movements.
 - 🖥️ A user interface for customizing folder structure.
 
 ## 🤝 Contributing
