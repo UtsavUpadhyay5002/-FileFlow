@@ -32,7 +32,7 @@ This Python project automatically organizes files in your Downloads folder. It m
 
 3. Make sure you have Python installed (Python 3 recommended).
 
-4.Create a logs.txt file in the project folder
+4. Create a logs.txt file in the project folder
     ```bash
     echo. > logs.txt
     ```
