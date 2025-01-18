@@ -24,53 +24,64 @@ def detectDownloadsChange():
                     shutil.move(downloadPath + "/" + file, os.path.expanduser("~/Pictures"))
                     print(time.strftime("%H:%M:%S: ")+ file + " moved to Pictures")
                     reportLog(time.strftime("%H:%M:%S: ")+ file + " moved to Pictures")
+                    flg += 1
                 elif ".txt" in file:
                     shutil.move(downloadPath + "/" + file, downloadPath + "/Downloaded_docs")
                     print(time.strftime("%H:%M:%S: ")+ file + " moved to " + downloadPath + "/Downloaded_docs")
                     reportLog(time.strftime("%H:%M:%S: ")+ file + " moved to " + downloadPath + "/Downloaded_docs")
+                    flg += 1
                 elif ".pdf" in file:
                     shutil.move(downloadPath + "/" + file, downloadPath + "/Downloaded_docs/PDFs")
                     print(time.strftime("%H:%M:%S: ")+ file + " moved to " + downloadPath + "/Downloaded_docs/PDFs")
                     reportLog(time.strftime("%H:%M:%S: ")+ file + " moved to " + downloadPath + "/Downloaded_docs/PDFs")
+                    flg += 1
                 elif ".docx" in file:
                     shutil.move(downloadPath + "/" + file, downloadPath + "/Downloaded_docs/MSword")
                     print(time.strftime("%H:%M:%S: ")+ file + " moved to " + downloadPath + "/Downloaded_docs/MSword")
                     reportLog(time.strftime("%H:%M:%S: ")+ file + " moved to " + downloadPath + "/Downloaded_docs/MSword")
+                    flg += 1
                 elif ".pptx" in file:
                     shutil.move(downloadPath + "/" + file, downloadPath + "/Downloaded_docs/PPTs")
                     print(time.strftime("%H:%M:%S: ")+ file + " moved to " + downloadPath + "/Downloaded_docs/PPTs")
                     reportLog(time.strftime("%H:%M:%S: ")+ file + " moved to " + downloadPath + "/Downloaded_docs/PPTs")
+                    flg += 1
                 elif ".csv" in file:
                     shutil.move(downloadPath + "/" + file, downloadPath + "/Downloaded_docs/CSVs")
                     print(time.strftime("%H:%M:%S: ")+ file + " moved to " + downloadPath + "/Downloaded_docs/CSVs")
                     reportLog(time.strftime("%H:%M:%S: ")+ file + " moved to " + downloadPath + "/Downloaded_docs/CSVs")
+                    flg += 1
                 elif ".mp4" in file or ".mkv" in file or ".mp3" in file:
                     shutil.move(downloadPath + "/" + file, os.path.expanduser("~/Videos"))
                     print(time.strftime("%H:%M:%S: ")+ file + " moved to Videos")
                     reportLog(time.strftime("%H:%M:%S: ")+ file + " moved to Videos")
+                    flg += 1
                 elif ".exe" in file:
                     shutil.move(downloadPath + "/" + file, downloadPath + "/executables")
                     print(time.strftime("%H:%M:%S: ")+ file + " moved to " + downloadPath + "/executables")
                     reportLog(time.strftime("%H:%M:%S: ")+ file + " moved to " + downloadPath + "/executables")
+                    flg += 1
                 elif ".zip" in file:
                     shutil.move(downloadPath + "/" + file, downloadPath + "/Zips")
                     print(time.strftime("%H:%M:%S: ")+ file + " moved to " + downloadPath + "/Zips")
                     reportLog(time.strftime("%H:%M:%S: ")+ file + " moved to " + downloadPath + "/Zips")
+                    flg += 1
                 elif ".drawio" in file:
                     shutil.move(downloadPath + "/" + file, downloadPath + "/drawios")
                     print(time.strftime("%H:%M:%S: ")+ file + " moved to " + downloadPath + "/drawios")
                     reportLog(time.strftime("%H:%M:%S: ")+ file + " moved to " + downloadPath + "/drawios")
+                    flg += 1
                 elif ".py" in file or ".java" in file or ".cpp" in file:
                     shutil.move(downloadPath + "/" + file, downloadPath + "/Downloaded_codes")
                     print(time.strftime("%H:%M:%S: ")+ file + " moved to " + downloadPath + "/Downloaded_codes")
                     reportLog(time.strftime("%H:%M:%S: ")+ file + " moved to " + downloadPath + "/Downloaded_codes")
+                    flg += 1
                 else:
-                    x=0
+                    flg = 0
         if flg == 0:
             print(time.strftime("%H:%M:%S: NO CHANGE"))
         else:
             list = os.listdir(downloadPath)    #list after making changes
         
-        time.sleep(5)
+        time.sleep(10)
 
 detectDownloadsChange()
