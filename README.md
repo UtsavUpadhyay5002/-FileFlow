@@ -18,6 +18,9 @@ This Python project automatically organizes files in your Downloads folder. It m
 3. The script runs indefinitely, checking every 5 seconds for new files to organize.
 4. Logs of files moved are stored in **"logs.txt"**
 
+![Screenshot (3)](https://github.com/user-attachments/assets/1f7cd83c-0d67-4435-ae09-e6e86c4ff704)
+
+
 ## 🛠️ Setup Instructions
 
 1. Clone the repository:
