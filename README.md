@@ -50,8 +50,9 @@ This Python project automatically organizes files in your Downloads folder. It m
 ## 🚀 Future Improvements
 
 This is just the beginning! Future updates may include:
-- 🔍 More advanced file sorting (e.g., by file size, creation date).
+- 🔍 More flexible, which will make it an organizer for any file that user selects in their system.
 - 🖥️ A user interface for customizing folder structure.
+- ❗ Deal with FileAlreadyExists error that I personally came accross while using this program.
 
 ## 🤝 Contributing
 
